@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video to Text Summarizer</title>
+    <link rel="stylesheet" href="/static/design.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Video to Text Summarizer</h1>
+        <form id="uploadForm">
+            <label for="videoFile">Upload Video File:</label>
+            <input type="file" id="videoFile" name="videoFile" accept="video/*">
+            
+            <label for="videoURL">Or Enter Video URL:</label>
+            <input type="url" id="videoURL" name="videoURL" placeholder="Enter video URL">
+
+            <button type="submit">Summarize</button>
+        </form>
+        <div id="output">
+            <h2>Transcription:</h2>
+            <p id="transcription"></p>
+            <h2>Summary:</h2>
+            <p id="summary"></p>
+        </div>
+    </div>
+    <script src="/static/frontend.js"></script>
+</body>
+</html>
